@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "HHDCityPicker"
-  s.version      = "0.0.3"
-  s.summary      = "FileHHDCityPicker File"
+  s.name         = "HHDMoneyVoice"
+  s.version      = "0.0.1"
+  s.summary      = "HHDMoneyVoice File"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    Testing private podspec,to verify availability
                    DESC
 
-  s.homepage     = "https://github.com/huanghaodong/eros-ios-city-choose-plugin.git"
+  s.homepage     = "https://github.com/huanghaodong/eros-ios-money-voice-plugin.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -55,15 +55,15 @@ Pod::Spec.new do |s|
 
   s.author             = { "huanghaodong" => "534634672@qq.com" }
 
-  s.source       = { :git => "https://github.com/huanghaodong/eros-ios-city-choose-plugin.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/huanghaodong/eros-ios-money-voice-plugin.git", :tag => "#{s.version}" }
 
 
 
-  s.source_files  = "ProvinceCityArea/**/*.{h,m}"
-  #s.resource_bundles = {'MyPlaceTxt' => ['ProvinceCityArea/*.txt']}
+  s.source_files  = "Sound/**/*.{h,m}"
+  #s.resource_bundles = {'MyPlaceTxt' => ['Sound/*.txt']}
   #s.exclude_files = "Classes/Exclude"
-	s.resources = "ProvinceCityArea/**/*.txt"
-  s.public_header_files = "ProvinceCityArea/**/*.h"
+	s.resources = "Sound/**/*.mp3"
+  s.public_header_files = "Sound/**/*.h"
 
 
 
@@ -96,6 +96,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
- s.dependency 'JSONModel', '~> 1.1.0'
+
 
 end
